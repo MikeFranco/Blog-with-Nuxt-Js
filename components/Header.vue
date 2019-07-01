@@ -1,8 +1,8 @@
 <template>
   <header class="header" >
     <ul class="nav-items" >
-      <li> <nuxt-link to="/" > Home </nuxt-link> </li>
-      <li> <nuxt-link to="/users" > Users </nuxt-link> </li>
+      <li> <h1> <nuxt-link to="/" > Home </nuxt-link> </h1> </li>
+      <li> <h1> <nuxt-link to="/users" > Users </nuxt-link> </h1> </li>
     </ul>
   </header>
 </template>
@@ -26,4 +26,15 @@
     align-items: center;
     width: 80%;
   }
+
+  .nav-items a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav-items a:hover,
+  .nav-items a:active{
+    color: red;
+  }
+
 </style>
